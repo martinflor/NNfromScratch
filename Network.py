@@ -44,6 +44,9 @@ class Neural:
         return data_output
     
     def fit(self, x, y, lr=0.01, epochs=100, optimizer = GradD):
+        """
+        x, y : training examples
+        """
         size = len(x)
         
         for i in range(epochs) : # For each epochs 
